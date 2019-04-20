@@ -42,7 +42,7 @@ if(a=='오늘의 운세'):
     result=random.choice(['돈주움','이쁜여자가 말걸음','아무일도없음','못생긴여자가 말걸음','똥밟음','엄마한테 혼남'])
 if(a=='미래의 여친얼굴'):
     result=random.choice(['트와이스','아이린','손나은','신봉선','김수'])
-if(a=='물리계산'):
+if(a=='거속시계산'):
     print('거리(S) = ',end='')
     b=input()
     print('속력(v) = ',end='')
@@ -58,4 +58,13 @@ if(a=='물리계산'):
     if(d==''):
         result=float(b)/float(c)
         print('시간(t) : '+str(result)+'s')
+if(a=='가속도계산'):
+    print('시간(t) = ',end='')
+    b=input()
+    print('처음속력(m/s) = ',end='')
+    c=input()
+    print('나중속력(m/s) = ',end='')
+    d=input()
+    result=(float(d)-float(c))/float(b)
+    print('가속도(m/s²) = '+str(result)+'m/s²')
 print('결과 : '+str(result))
